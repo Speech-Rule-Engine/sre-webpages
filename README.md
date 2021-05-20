@@ -1,37 +1,92 @@
-## Welcome to GitHub Pages
+## What's new
 
-You can use the [editor on GitHub](https://github.com/zorkow/sre-webpages/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+**Version 3.3 has been resleased containing Hindi Localisation**. See the
+[release
+notes](https://github.com/zorkow/speech-rule-engine/releases/tag/v3.3.1) for
+more details.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+**SRE is moving to Typescript**. The intial move of the codebase to Typescript
+has been completed. [A first alpha release is available for
+testing.](https://github.com/zorkow/speech-rule-engine/releases/tag/v4.0.0-alpha.1). Please
+test and [criticise or
+discuss](https://github.com/zorkow/speech-rule-engine/discussions/520).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## Background
 
-# Header 1
-## Header 2
-### Header 3
+Speech rule engine (SRE) is a Javascript library for generating speech for
+mathematical expressions. SRE is a standalone system based on its original
+implementation as the math speech engine in ChromeVox. SRE was forked from
+ChromeVox release 1.31.0 SRE can translate XML expressions into speech strings
+according to rules that can be specified in a syntax using Xpath expressions.
+It was originally designed for translation of MathML and MathJax DOM elements
+for the ChromeVox screen reader. However, in combination with
+[MathJax](https://mathjax.org) SRE can also work with more commonly use
+mathematics markup like LaTeX and AsciiMath.
 
-- Bulleted
-- List
+## Usage
 
-1. Numbered
-2. List
+There are three ways of using SRE:
 
-**Bold** and _Italic_ and `Code` text
+1. **Node Module:** Download via npm or yarn. This is the
+easiest way to use the speech rule engine via its Api and is the preferred
+option if you just want to include it in your project.
 
-[Link](url) and ![Image](src)
-```
+2. **Standalone Tool:** Download via github and build with
+make, or simply run it with ```npx```. This is useful if you want to use the
+speech rule engine in batch mode or interactivley to add your own code.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+3. **Browser Library:** This gives you the option of loading SRE in a browser
+   and use its full functionality on your webesites.
 
-### Jekyll Themes
+For more information see the [documentation on SRE's github
+pages](https://github.com/zorkow/speech-rule-engine).
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zorkow/sre-webpages/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+## Language Support
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Besides the rules originally designed for the use in ChromeVox, it also has an
+implemententation of the full set of Mathspeak and Clearspeak rules,
+localisation into a number of languages and Braille output currently in Nemeth.
+
+### Languages 
+
+* English
+* French
+* German
+* Spanish (Mathspeak only)
+* Italian
+* Hindi
+
+Others are in preparation. If you want to help, please contact us.
+
+### Braille
+
+* Nemeth
+
+If you want to help adding more, please contact us.
+
+
+## Semantic Library
+
+SRE contains a library for semantic interpretation to re-represents any
+mathematical expression in its own internal semantic format, overcoming the poor
+design of presentation MathML by fully disassembling and reconstructing an
+expression. For a better understanding of the representation have a look at its
+[visualiser](https://zorkow.github.io/semantic-tree-visualiser/visualise.html)
+where you can easily use LaTeX syntax for generating mathematics. The semantic
+trees can be used in their own XML format directly or used to enrich the input
+MathML expressions with semantic information and speech strings.
+
+## Browser Support
+
+SRE provides extensive browser support not only for translating mathematics into
+text but also for navigating, highlighting and semantically restructuring
+expressions. For more details and an overview of the interface [see here](www/keybindings.html).
+
+
+## Working files 
+
+The most recent test results are available at [SRE's test
+site](https://speech-rule-engine.github.io/sre-tests/output/).

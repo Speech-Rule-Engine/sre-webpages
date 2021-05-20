@@ -1,4 +1,5 @@
 # Site settings
+showheader: false
 theme: jekyll-theme-midnight
 title: Speech Rule Engine
 description: Turning Formulas into Speech
