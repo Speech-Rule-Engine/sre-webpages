@@ -2,6 +2,11 @@
 theme: jekyll-theme-midnight
 title: Speech Rule Engine
 description: Turning Formulas into Speech
+baseurl: ""
 url: "https://speechruleengine.org"
 
+# GitHub
 repository: zorkow/speech-rule-engine
+
+plugins:
+  - jekyll-github-metadata
