@@ -1,1 +1,7 @@
+# Site settings
 theme: jekyll-theme-midnight
+title: Speech Rule Engine
+description: Turning Formulas into Speech
+url: "https://speechruleengine.org"
+
+repository: zorkow/speech-rule-engine
