@@ -1,13 +1,19 @@
 ## What's new
 
-**Version 3.3 has been resleased containing Hindi Localisation**. See the
-[release
+### Version 3.3
+
+**Version 3.3 has been released containing Hindi Localisation**.
+
+See the [release
 notes](https://github.com/zorkow/speech-rule-engine/releases/tag/v3.3.1) for
 more details.
 
+### Upcoming 4.0
 
-**SRE is moving to Typescript**. The intial move of the codebase to Typescript
-has been completed. [A first alpha release is available for
+**SRE is moving to Typescript**.
+
+The initial move of the codebase to Typescript has been completed. [A first alpha
+release is available for
 testing.](https://github.com/zorkow/speech-rule-engine/releases/tag/v4.0.0-alpha.1). Please
 test and [criticise or
 discuss](https://github.com/zorkow/speech-rule-engine/discussions/520).
@@ -15,9 +21,9 @@ discuss](https://github.com/zorkow/speech-rule-engine/discussions/520).
 
 ## Background
 
-Speech rule engine (SRE) is a Javascript library for generating speech for
+Speech rule engine (SRE) is a JavaScript library for generating speech for
 mathematical expressions. SRE is a standalone system based on its original
-implementation as the math speech engine in ChromeVox. SRE was forked from
+implementation as the maths speech engine in ChromeVox. SRE was forked from
 ChromeVox release 1.31.0 SRE can translate XML expressions into speech strings
 according to rules that can be specified in a syntax using Xpath expressions.
 It was originally designed for translation of MathML and MathJax DOM elements
@@ -35,10 +41,10 @@ option if you just want to include it in your project.
 
 2. **Standalone Tool:** Download via github and build with
 make, or simply run it with ```npx```. This is useful if you want to use the
-speech rule engine in batch mode or interactivley to add your own code.
+speech rule engine in batch mode or interactively to add your own code.
 
 3. **Browser Library:** This gives you the option of loading SRE in a browser
-   and use its full functionality on your webesites.
+   and use its full functionality on your websites.
 
 For more information see the [documentation on SRE's github
 pages](https://github.com/zorkow/speech-rule-engine).
@@ -47,10 +53,10 @@ pages](https://github.com/zorkow/speech-rule-engine).
 ## Language Support
 
 Besides the rules originally designed for the use in ChromeVox, it also has an
-implemententation of the full set of Mathspeak and Clearspeak rules,
+implementation of the full set of Mathspeak and Clearspeak rules,
 localisation into a number of languages and Braille output currently in Nemeth.
 
-### Languages 
+### Languages
 
 * English
 * French
@@ -86,7 +92,7 @@ text but also for navigating, highlighting and semantically restructuring
 expressions. For more details and an overview of the interface [see here](www/keybindings.html).
 
 
-## Working files 
+## Working files
 
 The most recent test results are available at [SRE's test
 site](https://speech-rule-engine.github.io/sre-tests/output/).
