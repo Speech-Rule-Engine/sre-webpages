@@ -5,7 +5,7 @@
 **Version 4.0 has been released. SRE is now fully in Typescript**.
 
 For full details on changes see the [release
-notes](https://github.com/zorkow/speech-rule-engine/releases/tag/v4.0.0). But in
+notes](https://github.com/Speech-Rule-Engine/speech-rule-engine/releases/tag/v4.0.0). But in
 a nutshell here is a summary of changes:
 
 * SRE moves to ES6 using TypeScript and webpack:
@@ -66,7 +66,7 @@ speech rule engine in batch mode or interactively to add your own code.
    and use its full functionality on your websites.
 
 For more information see the [documentation on SRE's github
-pages](https://github.com/zorkow/speech-rule-engine).
+pages](https://github.com/Speech-Rule-Engine/speech-rule-engine).
 
 
 ## Language Support
@@ -88,12 +88,14 @@ localisation into a number of languages and Braille output currently in Nemeth.
 * Italian
 * Hindi
 
-Others are in preparation. 
+Others are in preparation. If you want to help, please contact us.
 
 All localisation are done in the [dedicated repository
 `sre-l10n`](https://github.com/Speech-Rule-Engine/sre-l10n/) using a bespoke
-YAML format for rules and CrowdIn support for simple message translations. If
-you want to help, please contact us.
+[YAML format](https://speech-rule-engine.github.io/sre-l10n/yaml.html) for rules
+and [CrowdIn support](https://crowdin.com/project/speech-rule-engine) for simple
+message translations.
+
 
 ### Braille
 
@@ -108,7 +110,7 @@ SRE contains a library for semantic interpretation to re-represents any
 mathematical expression in its own internal semantic format, overcoming the poor
 design of presentation MathML by fully disassembling and reconstructing an
 expression. For a better understanding of the representation have a look at its
-[visualiser](https://zorkow.github.io/semantic-tree-visualiser/visualise.html)
+[visualiser](https://speech-rule-engine.github.io/semantic-tree-visualiser/visualise.html)
 where you can easily use LaTeX syntax for generating mathematics. The semantic
 trees can be used in their own XML format directly or used to enrich the input
 MathML expressions with semantic information and speech strings.
