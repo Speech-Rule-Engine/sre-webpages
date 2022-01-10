@@ -1,22 +1,41 @@
 ## What's new
 
-### Version 3.3
+### Version 4.0
 
-**Version 3.3 has been released containing Hindi Localisation**.
+**Version 4.0 has been released. SRE is now fully in Typescript**.
 
-See the [release
-notes](https://github.com/zorkow/speech-rule-engine/releases/tag/v3.3.1) for
-more details.
+For full details on changes see the [release
+notes](https://github.com/zorkow/speech-rule-engine/releases/tag/v4.0.0). But in
+a nutshell here is a summary of changes:
 
-### Upcoming 4.0
+* SRE moves to ES6 using TypeScript and webpack:
+    * API now uses promise for engine setup
+    * Single bundle file for both node and browser
+    * Support for alternative bundlers
+* New locales for Norwegian (Bokmal and Nynorsk), Swedish, and Catalan
+* Support for two dimensional formula layout in Nemeth Braille
+* Major rewrite of rule handling
+    * Smaller memory footprint of indexed rules
+    * Smaller locale files
+* All localisation now in a [dedicated repository `sre-l10n`](https://github.com/Speech-Rule-Engine/sre-l10n/)
+    * Bespoke YAML format for speech rules for easier translation
+    * CrowdIn support for simple message translations
+* New API methods for generating word representations of numbers, ordinals, and vulgar fractions
+* Internet Explorer support deprecated
 
-**SRE is moving to Typescript**.
 
-The initial move of the codebase to Typescript has been completed. [A first alpha
-release is available for
-testing.](https://github.com/zorkow/speech-rule-engine/releases/tag/v4.0.0-alpha.1). Please
-test and [criticise or
-discuss](https://github.com/zorkow/speech-rule-engine/discussions/520).
+#### Acknowledgements
+
+Thanks to the following organisations for their support:
+
+* [NumFocus](https://numfocus.org) for a "Small Development Grant" that financed a one week sprint to make the initial conversion to TypeScript possible
+* [TextHelp](https://texthelp.com) for their support on
+    * refactoring the rule engine, redesigning the rule format and [CrowdIn](https://crowdin.com/) integration
+    * localisations into Nordic languages
+* [Statistical Institute of Catalonia](https://www.idescat.cat/) (Idescat) for providing the Catalan translations
+* [American Action Fund](https://www.actionfund.org/) for supporting the ongoing Nemeth work.
+* [MathJax](https://mathjax.org) for their continuing support of the system.
+
 
 
 ## Background
@@ -59,17 +78,26 @@ localisation into a number of languages and Braille output currently in Nemeth.
 ### Languages
 
 * English
+* Catalan (Mathspeak only)
 * French
 * German
+* Norwegian Bokmål
+* Norwegian Nynorsk
 * Spanish (Mathspeak only)
+* Swedish
 * Italian
 * Hindi
 
-Others are in preparation. If you want to help, please contact us.
+Others are in preparation. 
+
+All localisation are done in the [dedicated repository
+`sre-l10n`](https://github.com/Speech-Rule-Engine/sre-l10n/) using a bespoke
+YAML format for rules and CrowdIn support for simple message translations. If
+you want to help, please contact us.
 
 ### Braille
 
-* Nemeth
+* Nemeth: both linear for Braille displays and two dimensional for embossing
 
 If you want to help adding more, please contact us.
 
