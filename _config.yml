@@ -7,7 +7,7 @@ baseurl: ""
 url: "https://speechruleengine.org"
 
 # GitHub
-repository: zorkow/speech-rule-engine
+repository: speech-rule-engine/speech-rule-engine
 
 plugins:
   - jekyll-github-metadata
